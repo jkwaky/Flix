@@ -37,8 +37,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-![Alt Text](flix_week1.gif)
+![flix_week1](https://user-images.githubusercontent.com/8826140/45327836-d743ef00-b51e-11e8-89d6-09139e10f0a2.gif)
 
 ## Notes
 
