@@ -10,7 +10,7 @@ import UIKit
 import AlamofireImage
 
 class NowPlayingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var refreshControl: UIRefreshControl!
@@ -51,7 +51,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource, UITable
             }
         }
         task.resume()
-
+        
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
@@ -74,21 +74,30 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource, UITable
         cell.poisterImageView.af_setImage(withURL: posterURL)
         return cell
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexpath = tableView.indexPath(for: cell){
+            let movie = movies[indexpath.row]
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.movie = movie
+            
+        }
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
