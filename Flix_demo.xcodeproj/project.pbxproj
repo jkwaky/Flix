@@ -16,6 +16,8 @@
 		0F2BBD7C2145CB1A0016FC3D /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2BBD7B2145CB1A0016FC3D /* NowPlayingViewController.swift */; };
 		0F2BBD8021470F610016FC3D /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2BBD7F21470F610016FC3D /* MovieCell.swift */; };
 		0F3B97292148881C006527DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B97282148881C006527DE /* DetailViewController.swift */; };
+		0F3B972B21489040006527DE /* PosteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B972A21489040006527DE /* PosteCell.swift */; };
+		0F3B972D214890B7006527DE /* SuperHeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B972C214890B7006527DE /* SuperHeroViewController.swift */; };
 		5379F71CB69521C16CA40243 /* Pods_Flix_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95754D9BDA041C7B5BE8BEFF /* Pods_Flix_demo.framework */; };
 		D46BED5BBE6A479A8034E674 /* Pods_Flix_demoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAFFD4E7CEDA7675B040A07 /* Pods_Flix_demoUITests.framework */; };
 		F391CC89D325858E8024461A /* Pods_Flix_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C121D22C3AEC5DBEFE3AD28E /* Pods_Flix_demoTests.framework */; };
@@ -55,6 +57,8 @@
 		0F2BBD7B2145CB1A0016FC3D /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 		0F2BBD7F21470F610016FC3D /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		0F3B97282148881C006527DE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0F3B972A21489040006527DE /* PosteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosteCell.swift; sourceTree = "<group>"; };
+		0F3B972C214890B7006527DE /* SuperHeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroViewController.swift; sourceTree = "<group>"; };
 		41392B1DE7FF7F56003E779E /* Pods-Flix_demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix_demoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flix_demoTests/Pods-Flix_demoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		764C6C56780FD880532983D7 /* Pods-Flix_demoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix_demoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flix_demoUITests/Pods-Flix_demoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		95754D9BDA041C7B5BE8BEFF /* Pods_Flix_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flix_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,13 +122,13 @@
 		0F1DCF86213F4D7F00562CD1 /* Flix_demo */ = {
 			isa = PBXGroup;
 			children = (
-				0F1DCF87213F4D7F00562CD1 /* AppDelegate.swift */,
-				0F1DCF8B213F4D7F00562CD1 /* Main.storyboard */,
+				0F3B9727214887E7006527DE /* Views */,
 				0F3B9726214887CA006527DE /* Viewcontrollers */,
+				0F1DCF8B213F4D7F00562CD1 /* Main.storyboard */,
 				0F1DCF8E213F4D8100562CD1 /* Assets.xcassets */,
+				0F1DCF87213F4D7F00562CD1 /* AppDelegate.swift */,
 				0F1DCF90213F4D8100562CD1 /* LaunchScreen.storyboard */,
 				0F1DCF93213F4D8100562CD1 /* Info.plist */,
-				0F3B9727214887E7006527DE /* Views */,
 			);
 			path = Flix_demo;
 			sourceTree = "<group>";
@@ -152,6 +156,7 @@
 			children = (
 				0F2BBD7B2145CB1A0016FC3D /* NowPlayingViewController.swift */,
 				0F3B97282148881C006527DE /* DetailViewController.swift */,
+				0F3B972C214890B7006527DE /* SuperHeroViewController.swift */,
 			);
 			path = Viewcontrollers;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				0F2BBD7F21470F610016FC3D /* MovieCell.swift */,
+				0F3B972A21489040006527DE /* PosteCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -399,8 +405,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3B972D214890B7006527DE /* SuperHeroViewController.swift in Sources */,
 				0F2BBD7C2145CB1A0016FC3D /* NowPlayingViewController.swift in Sources */,
 				0F1DCF88213F4D7F00562CD1 /* AppDelegate.swift in Sources */,
+				0F3B972B21489040006527DE /* PosteCell.swift in Sources */,
 				0F2BBD8021470F610016FC3D /* MovieCell.swift in Sources */,
 				0F3B97292148881C006527DE /* DetailViewController.swift in Sources */,
 			);
