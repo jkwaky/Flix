@@ -94,7 +94,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
+![flix_week2](https://user-images.githubusercontent.com/8826140/45659129-c871b500-baa7-11e8-9d10-751c9fa8a7ad.gif)
 
 
 ## Notes
